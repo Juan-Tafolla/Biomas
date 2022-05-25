@@ -3,7 +3,6 @@
 /* ------------------- */
 
 :root {
-    /* colors */
     --clr-dark: 230 35% 7%;
     --clr-light: 231 77% 90%;
     --clr-white: 0 0% 100%;
@@ -36,7 +35,6 @@
 
 @media (min-width: 45em) {
     :root {
-        /* font-sizes */
         --fs-800: 6.25rem;
         --fs-700: 3.5rem;
         --fs-600: 2rem;
@@ -46,13 +44,6 @@
 }
 
 
-/* ------------------- */
-/* Reset               */
-/* ------------------- */
-
-/* https://piccalil.li/blog/a-modern-css-reset/ */
-
-/* Box sizing */
 *,
 *::before,
 *::after {
@@ -112,7 +103,7 @@ select {
     font: inherit;
 }
 
-/* remove animations for people who've turned them off */
+
 @media (prefers-reduced-motion: reduce) {  
   *,
   *::before,
@@ -124,12 +115,6 @@ select {
   }
 }
 
-
-/* ------------------- */
-/* Utility classes     */
-/* ------------------- */
-
-/* general */
 
 .flex {
     display: flex;
@@ -648,5 +633,30 @@ body {
         --gap: min(6vw, 6rem);
         justify-content: start;
     }
+    
+}
 
+body{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.texto{
+    padding-top: 2rem;
+    padding-inline: 5rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    background: hsl( var(--clr-dark) / 0.6);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify;
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+footer{
+    text-align: center;
+    color:rgba(240, 248, 255, 0.156);
+    background-color: rgb(20, 17, 17);
 }
